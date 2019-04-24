@@ -9,7 +9,7 @@ It is possible to use both of these rules at the same time.
 Given a list of emails, we send one email to each address in the list.  
 How many different addresses actually receive mails '''
 
-def numUniqueEmails(emails) -> int:
+def num_unique_emails(emails) -> int:
         emailList = []
         for address in emails:
             localName, domainName = address.split('@')
@@ -19,6 +19,3 @@ def numUniqueEmails(emails) -> int:
             if email not in emailList:
                 emailList.append(email)
         return len(emailList)
-
-emailList = ["test.email+alex@leetcode.com", "test.email+ale.x@leetcode.com","test.e.mail+bob.cathy@leetcode.com","testemail+david@lee.tcode.com", "testemail+david@lee.tc+ode.com"]
-print(numUniqueEmails(emailList))

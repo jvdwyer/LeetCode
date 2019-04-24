@@ -6,6 +6,6 @@ We'll call such a concatenation, the transformation of a word.
 
 Return the number of different transformations among all words we have.'''
 
-def uniqueMorseRepresentations(words) -> int:
-    morseTable = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
-    return len({"".join(morseTable[ord(c) - ord('a')] for c in word) for word in words})
+def unique_morse_representations(words) -> int:
+    morse_table = [".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--.."]
+    return len({"".join(morse_table[ord(c) - ord('a')] for c in word) for word in words})
